@@ -1,0 +1,22 @@
+[project]
+name = "Algobio"
+version = "0.0.1"
+description = "The backend of a highly-scalable interactive platform for learning bioinformatics"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.18.5",
+    "ecs-logging>=2.3.0",
+    "fastapi[standard]>=0.139.2",
+    "httpretty>=1.1.4",
+    "httpx>=0.28.1",
+    "ipython>=9.16.1",
+    "psycopg2-binary>=2.9.12",
+    "pydantic>=2.13.4",
+    "pyjwt>=2.13.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.0.51",
+    "testcontainers>=4.15.0",
+]
