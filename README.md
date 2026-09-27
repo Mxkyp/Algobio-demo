@@ -79,27 +79,30 @@ You will need the following tools installed on your local machine:
    Create a `.env` file in the root directory. 
    
    For code execution, this project is configured to use Judge0. To get started quickly without hosting your own runner, you can point to the free public instance.
+
+   **NOTE:** Submissions will not work with the free hosted judge0 instance as it does not support callbacks.
    
    At a minimum, you'll need the following in your `.env`:
    ```env
    # Database Configuration
-    API_BASE_URL=http://localhost:2358
-    X_AUTH_TOKEN=abc123
-    X_AUTH_USER=mySecretToken
-    DB_USERNAME=postgres
-    DB_PASS=example
-    DB_HOST=localhost
-    DB_PORT=5432
-    DB_NAME=postgres
+   API_BASE_URL=http://localhost:2358
+   X_AUTH_TOKEN=abc123
+   X_AUTH_USER=mySecretToken
+   DB_USERNAME=postgres
+   DB_PASS=example
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_NAME=postgres
 
-    # Google OAuth2 Authentication
-    google_client_id=ADD_YOURS_HERE
-    google_client_secret=ADD_YOURS_HERE
-    google_redirect_uri=http://localhost:8000/auth/callback/google
-    jwt_secret_key=abc
-    
-    # Judge0 Code Execution
-    JUDGE0_HOST=https://ce.judge0.com
+   # Google OAuth2 Authentication
+   google_client_id=ADD_YOURS_HERE
+   google_client_secret=ADD_YOURS_HERE
+   google_redirect_uri=http://localhost:8000/auth/callback/google
+   jwt_secret_key=abc
+   
+   # Judge0 Code Execution
+   JUDGE0_HOST=https://ce.judge0.com
+   JUDGE0_API_KEY=abc321 # needed for callbacks
    ```
 
 4. **Start the Database**
@@ -112,7 +115,12 @@ You will need the following tools installed on your local machine:
    uv run alembic upgrade head
    ```
 
-6. **Start the Development Server**
+6. **Run seeding script**
+   ```sh
+   uv run seed.py
+   ```
+
+7. **Start the Development Server**
    ```sh
    uv run fastapi dev main.py
    ```
