@@ -69,18 +69,23 @@ You will need the following tools installed on your local machine:
    At a minimum, you'll need the following in your `.env`:
    ```env
    # Database Configuration
-   DB_USERNAME=postgres
-   DB_PASS=example
-   DB_HOST=localhost
-   DB_PORT=5432
-   DB_NAME=postgres
+    API_BASE_URL=http://localhost:2358
+    X_AUTH_TOKEN=abc123
+    X_AUTH_USER=mySecretToken
+    DB_USERNAME=postgres
+    DB_PASS=example
+    DB_HOST=localhost
+    DB_PORT=5432
+    DB_NAME=postgres
 
-   # Google OAuth2 Authentication
-   google_client_id=YOUR_CLIENT_ID
-   google_client_secret=YOUR_CLIENT_SECRET
-
-   # Judge0 Code Execution
-   JUDGE0_HOST=https://ce.judge0.com
+    # Google OAuth2 Authentication
+    google_client_id=ADD_YOURS_HERE
+    google_client_secret=ADD_YOURS_HERE
+    google_redirect_uri=http://localhost:8000/auth/callback/google
+    jwt_secret_key=abc
+    
+    # Judge0 Code Execution
+    JUDGE0_HOST=https://ce.judge0.com
    ```
 
 4. **Start the Database**
@@ -118,7 +123,7 @@ The API is fully documented using OpenAPI. Once the development server is runnin
 * [ ] Add admin dashboard endpoints
 * [ ] Add user  dashboard endpoints
 * [ ] Add problem view endpoints
-
+* [ ] Add unsecured profile so others can self-host this without creating OAuth2 credentials
 <!-- CONTACT -->
 ## Contact
 

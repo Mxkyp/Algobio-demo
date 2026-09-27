@@ -13,7 +13,7 @@ class Config(BaseSettings):
     db_port: str
     db_host: str
     db_name: str
-    judge0_api_key: str
+    judge0_api_key: str | None = None
     judge0_host: str
     google_client_id: str
     google_client_secret: str
