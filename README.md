@@ -35,8 +35,12 @@ Used [Antigravity CLI](https://antigravity.google/docs) (Gemini 4.5 Pro extended
 ## Features
 
 * Code execution via Judge0
-* OAuth2 authentication
+  
+  ![Run execution](run.gif)
 * Automated code evaluation against predefined test cases
+  
+  ![Submit evaluation](submit.gif)
+* OAuth2 authentication
 * REST API built with FastAPI
 * Database managed with PostgreSQL, SQLAlchemy, and Alembic
 
