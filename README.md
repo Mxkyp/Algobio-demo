@@ -23,15 +23,6 @@ As it will be commercialized. ***This repo will always be a public demo lacking 
 Updated on a best-effort basis.
 
 
-## AI Usage
-Used [Antigravity CLI](https://antigravity.google/docs) (Gemini 4.5 Pro extended) paired with [Openspec SDD](https://openspec.dev) skill for:
-1. Writing down acceptance criteria for features in markdown.
-2. Discussing edge cases and trade-offs.
-3. Writing tests.
-4. Writing the first draft of this readme.
-
-*So I had the pleasure of writing the code myself.*
-
 ## Features
 
 * Code execution via Judge0
@@ -51,6 +42,15 @@ Used [Antigravity CLI](https://antigravity.google/docs) (Gemini 4.5 Pro extended
  [![SQLAlchemy][SQLAlchemy.com]][SQLAlchemy-url]
  [![Judge0][Judge0.com]][Judge0-url]
  [![Python][Python.org]][Python-url]
+
+## AI Usage
+Used [Antigravity CLI](https://antigravity.google/docs) (Gemini 4.5 Pro extended) paired with [Openspec SDD](https://openspec.dev) skill for:
+1. Writing down acceptance criteria for features in markdown.
+2. Discussing edge cases and trade-offs.
+3. Writing tests.
+4. Writing the first draft of this readme.
+
+*So I had the pleasure of writing the code myself.*
 
 ## Getting Started
 
